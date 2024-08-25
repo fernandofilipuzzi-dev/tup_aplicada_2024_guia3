@@ -8,7 +8,7 @@ namespace Ejercicio2.Models
 
         public Mesa(string descripcion, double precioBase, int tipoMaterial, double largo):base(descripcion, precioBase, tipoMaterial)
         { 
-            this.largo = precioBase;
+            this.largo = largo;
         }
         
         override public double CalcularPrecio()

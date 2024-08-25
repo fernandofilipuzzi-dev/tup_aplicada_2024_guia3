@@ -23,22 +23,22 @@ namespace Ejercicio1
             double largo;
             int tipoMaterial;
 
-            //agregando un primer caso
+            //ejemplo 1
             precioBase = 10.1;
             descripcion = "Mesa Comedor";
             largo = 1;
             tipoMaterial = 1;
             nuevaMesa = new Mesa(descripcion, precioBase, tipoMaterial, largo);
             lista.Add(nuevaMesa);
-            //fin caso
+            //fin ejemplo 1
 
-            //agregando un segundo caso
+            //ejemplo 2
             precioBase = 12.2;
             descripcion = "Silla";
             tipoMaterial = 2;
             Silla nuevaSilla = new Silla(descripcion, precioBase, tipoMaterial);
             lista.Add(nuevaSilla);
-            //fin caso
+            //fin ejemplo 2
 
             tbVer.Clear();
 

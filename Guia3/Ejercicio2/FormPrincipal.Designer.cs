@@ -51,6 +51,7 @@
             // 
             // btnAgregarProducto
             // 
+            this.btnAgregarProducto.Enabled = false;
             this.btnAgregarProducto.Location = new System.Drawing.Point(81, 86);
             this.btnAgregarProducto.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnAgregarProducto.Name = "btnAgregarProducto";
@@ -62,6 +63,7 @@
             // 
             // btnVerPresupuesto
             // 
+            this.btnVerPresupuesto.Enabled = false;
             this.btnVerPresupuesto.Location = new System.Drawing.Point(81, 145);
             this.btnVerPresupuesto.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnVerPresupuesto.Name = "btnVerPresupuesto";
@@ -135,6 +137,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "FormPrincipal";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Presupuesto Muebles";
             this.ResumeLayout(false);
             this.PerformLayout();

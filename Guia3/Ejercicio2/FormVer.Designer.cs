@@ -34,17 +34,18 @@
             // 
             // tbVer
             // 
+            this.tbVer.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbVer.Location = new System.Drawing.Point(13, 14);
             this.tbVer.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tbVer.Multiline = true;
             this.tbVer.Name = "tbVer";
-            this.tbVer.Size = new System.Drawing.Size(574, 241);
+            this.tbVer.Size = new System.Drawing.Size(814, 241);
             this.tbVer.TabIndex = 0;
             // 
             // btnOK
             // 
             this.btnOK.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.btnOK.Location = new System.Drawing.Point(238, 265);
+            this.btnOK.Location = new System.Drawing.Point(352, 265);
             this.btnOK.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnOK.Name = "btnOK";
             this.btnOK.Size = new System.Drawing.Size(112, 35);
@@ -56,13 +57,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(600, 311);
+            this.ClientSize = new System.Drawing.Size(832, 311);
             this.Controls.Add(this.btnOK);
             this.Controls.Add(this.tbVer);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "FormVer";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Ver Presupuesto";
             this.ResumeLayout(false);
             this.PerformLayout();

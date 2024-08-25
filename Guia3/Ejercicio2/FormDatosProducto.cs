@@ -16,5 +16,10 @@ namespace Ejercicio2
         {
             InitializeComponent();
         }
+
+        private void cbTipoProducto_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            tbLargo.Enabled = cbTipoProducto.SelectedIndex == 1;
+        }
     }
 }
