@@ -43,15 +43,15 @@ namespace Ejercicio4
             //no necesito conocer si renata tiene o no obra social
             selectedConsulta=((Prestacion) prestaciones[1]); //selección de objeto de interés
             montoAPagar=selectedConsulta.PrestarServicio();
-            lbResultados.Items.Add(string.Format( "Consulta de {0}, monto: ${1:f2}", selectedConsulta.ApellidosNombre, montoAPagar) );
+            lbResultados.Items.Add(string.Format( "Consulta de {0}, monto: ${1:f2}", selectedConsulta.ApellidosNombres, montoAPagar) );
 
             selectedConsulta=((Prestacion) prestaciones[1]); //selección de objeto de interés
             montoAPagar=selectedConsulta.PrestarServicio();
-            lbResultados.Items.Add(string.Format( "Consulta de {0}, monto: ${1:f2}", selectedConsulta.ApellidosNombre, montoAPagar) );
+            lbResultados.Items.Add(string.Format( "Consulta de {0}, monto: ${1:f2}", selectedConsulta.ApellidosNombres, montoAPagar) );
 
             selectedConsulta=((Prestacion) prestaciones[1]); //selección de objeto de interés
             montoAPagar=selectedConsulta.PrestarServicio();
-            lbResultados.Items.Add(string.Format( "Consulta de {0}, monto: ${1:f2}", selectedConsulta.ApellidosNombre, montoAPagar) );
+            lbResultados.Items.Add(string.Format( "Consulta de {0}, monto: ${1:f2}", selectedConsulta.ApellidosNombres, montoAPagar) );
 
 
             //juan necesita tres consultas tambien en un mes; 
@@ -59,21 +59,21 @@ namespace Ejercicio4
             //según lo que su modelo de pago diga
             selectedConsulta=((Prestacion) prestaciones[0]); //selección de objeto de interés
             montoAPagar=selectedConsulta.PrestarServicio();
-            lbResultados.Items.Add(string.Format( "Consulta de {0}, monto: ${1:f2}", selectedConsulta.ApellidosNombre, montoAPagar) );
+            lbResultados.Items.Add(string.Format( "Consulta de {0}, monto: ${1:f2}", selectedConsulta.ApellidosNombres, montoAPagar) );
 
             selectedConsulta=((Prestacion) prestaciones[0]); //selección de objeto de interés
             montoAPagar=selectedConsulta.PrestarServicio();
-            lbResultados.Items.Add(string.Format( "Consulta de {0}, monto: ${1:f2}", selectedConsulta.ApellidosNombre, montoAPagar) );
+            lbResultados.Items.Add(string.Format( "Consulta de {0}, monto: ${1:f2}", selectedConsulta.ApellidosNombres, montoAPagar) );
 
             selectedConsulta=((Prestacion) prestaciones[0]); //selección de objeto de interés
             montoAPagar=selectedConsulta.PrestarServicio();
-            lbResultados.Items.Add(string.Format( "Consulta de {0}, monto: ${1:f2}", selectedConsulta.ApellidosNombre, montoAPagar) );
+            lbResultados.Items.Add(string.Format( "Consulta de {0}, monto: ${1:f2}", selectedConsulta.ApellidosNombres, montoAPagar) );
 
 
             //llego el cierre del mes y hay que generar los pagos a los médicos.
             foreach(Prestador medico in prestadores)
             {
-              lbResultados.Items.Add(string.Format( "Médico: {0}, Monto a Cobrar: ${1:f2}", medico.ApellidosNombre, medico.GenerarPago()));
+              lbResultados.Items.Add(string.Format( "Médico: {0}, Monto a Cobrar: ${1:f2}", medico.ApellidosNombres, medico.GenerarPago()));
             }
             
         }        

@@ -7,8 +7,8 @@ namespace Ejercicio4.Models
         public double MontoTotal { get; protected set; }
         public Prestador Medico { get; set; }
 
-        public Prestacion(string apn, Prestador medico)
-            : base(apn)
+        public Prestacion(string apellidosNombresPersona, Prestador medico)
+            : base(apellidosNombresPersona)
         {
             this.Medico = medico;
             this.Medico.AgregarConsulta(this);

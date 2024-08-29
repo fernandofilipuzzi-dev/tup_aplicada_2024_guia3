@@ -4,11 +4,11 @@ namespace Ejercicio4.Models
 {
     abstract class Persona
     {
-        public string ApellidosNombre { get; set; }
+        public string ApellidosNombres { get; set; }
 
-        public Persona(string apn)
+        public Persona(string apellidosNombres)
         {
-            ApellidosNombre = apn;
+            ApellidosNombres = apellidosNombres;
         }
     }
 }

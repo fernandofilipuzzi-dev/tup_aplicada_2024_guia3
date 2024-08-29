@@ -9,8 +9,8 @@ namespace Ejercicio4.Models
         //son todas las consultas de ese mes
         ArrayList consultas = new ArrayList();
 
-        public Prestador(string apn)
-            : base(apn)
+        public Prestador(string apellidosNombres)
+            : base(apellidosNombres)
         {
         }
 
