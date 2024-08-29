@@ -25,21 +25,23 @@ namespace Ejercicio4
 
             //prueba de concepto (simulación)
 
-            //crear el listado de prestadores
-            ArrayList prestadores=new ArrayList();
+            #region crear el listado de prestadores
+            ArrayList prestadores =new ArrayList();
             prestadores.Add(new Prestador("Médico "+1));
             prestadores.Add(new Prestador("Médico "+2));
+            #endregion
 
-            //dar de alta las prestaciones (consultas)
+            #region dar de alta las prestaciones (consultas)
             ArrayList prestaciones = new ArrayList();
             prestaciones.Add(new ObraSocial("Juan", (Prestador)prestadores[0]));
             prestaciones.Add(new SinObra("Renata", "20292046002", (Prestador)prestadores[1]));
+            #endregion
 
             //creado el contexto – a jugar!
             Prestacion selectedConsulta=null;
             double montoAPagar=0;
 
-            //renata necesita tres consultas en un mes; 
+            #region renata necesita tres consultas en un mes; 
             //no necesito conocer si renata tiene o no obra social
             selectedConsulta=((Prestacion) prestaciones[1]); //selección de objeto de interés
             montoAPagar=selectedConsulta.PrestarServicio();
@@ -52,9 +54,9 @@ namespace Ejercicio4
             selectedConsulta=((Prestacion) prestaciones[1]); //selección de objeto de interés
             montoAPagar=selectedConsulta.PrestarServicio();
             lbResultados.Items.Add(string.Format( "Consulta de {0}, monto: ${1:f2}", selectedConsulta.ApellidosNombres, montoAPagar) );
+            #endregion
 
-
-            //juan necesita tres consultas tambien en un mes; 
+            #region juan necesita tres consultas tambien en un mes; 
             //del mismo modo que el caso anterior, juan consigue sus consultas y pagará 
             //según lo que su modelo de pago diga
             selectedConsulta=((Prestacion) prestaciones[0]); //selección de objeto de interés
@@ -68,14 +70,15 @@ namespace Ejercicio4
             selectedConsulta=((Prestacion) prestaciones[0]); //selección de objeto de interés
             montoAPagar=selectedConsulta.PrestarServicio();
             lbResultados.Items.Add(string.Format( "Consulta de {0}, monto: ${1:f2}", selectedConsulta.ApellidosNombres, montoAPagar) );
+            #endregion
 
-
-            //llego el cierre del mes y hay que generar los pagos a los médicos.
-            foreach(Prestador medico in prestadores)
+            #region llego el cierre del mes y hay que generar los pagos a los médicos.
+            foreach (Prestador medico in prestadores)
             {
-              lbResultados.Items.Add(string.Format( "Médico: {0}, Monto a Cobrar: ${1:f2}", medico.ApellidosNombres, medico.GenerarPago()));
+                lbResultados.Items.Add(string.Format("Médico: {0}, Monto a Cobrar: ${1:f2}", medico.ApellidosNombres, medico.GenerarPago()));
             }
-            
+            #endregion
+
         }        
     }
 }
